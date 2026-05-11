@@ -3,7 +3,7 @@
     <head>
         <title>Gestionnaire de METAR</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="register.css">
+		<link rel="stylesheet" href="static/css/register.css">
     </head>
     <body>
         <header>
@@ -12,10 +12,10 @@
                     <ul>
                         <li class="deroulant"><a>Navigation</a>
                             <ul class="sous">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="login.html">Connexion</a></li>
-                                <li><a href="register.html">Inscription</a></li>
-                                <li><a href="webmasters.html">Webmasters</a></li>
+                               <li><a href="/">Home</a></li>
+                                <li><a href="/login">Connexion</a></li>
+                                <li><a href="/register">Inscription</a></li>
+                                <li><a href="/webmasters">Webmasters</a></li>
                             </ul>
                         </li>
                         
@@ -26,15 +26,22 @@
             
         </header>
         <body>
+
             <div class="center">
-                <b>Connexion</b>
-                     <div class="inputs">
-                        <input type="text" placeholder="Login">
-                        <input type="password" placeholder="Mot de passe">
-                        <button>Connexion</button>
-                    </div>
+                 <b>Connexion</b>
+                     <form class="inputs" action="/connecter" method="POST">
+                        <input type="text" placeholder="Login" id="login" name="login">
+                        <input type="password" placeholder="Mot de passe" id="mdp" name="mdp">
+                        <button type="submit">Connexion</button>
+                    </form>
             </div>
         </body>
+
+        {% if session['idutilisateur'] %}
+            <p class="connected">CONBNECTEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE</p>
+        {% else %}
+            <p class="disconnected">PAS CONNECTEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE</p>
+        {% endif %}
         <footer>
             <p>IENAC25 : Groupe-D © | Si besoin d'aide <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">cliquez ici !</a></p>
         </footer>

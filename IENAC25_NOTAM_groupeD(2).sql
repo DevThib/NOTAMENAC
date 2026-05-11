@@ -104,7 +104,7 @@ INSERT INTO `Utilisateur` (`idutilisateur`, `nom`, `prenom`, `login`, `motdepass
 (2, 'Collec', 'Noe', 'collecno', 'ViveLaBretagne', 0),
 (3, 'Montemont', 'Axel', 'montemax', 'ViveLAlsace', 0),
 (4, 'Ermel', 'Thibault', 'ermelth', 'Chat', 1),
-(5, 'Dalquier', 'Alois', 'dalquial', 'Vivele47', 1);
+(5, 'Dalquier', 'Aloïs', 'dalquial', 'Weshlastreet', 1);
 
 -- --------------------------------------------------------
 

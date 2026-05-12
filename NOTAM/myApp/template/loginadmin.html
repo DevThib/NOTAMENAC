@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    {% set titre="Gestion des NOTAM" %}
+    <head>{% include("layout/head.html") %}</head>
+    <header>{% include("layout/nav.html") %}</header>
+        <body>
+             <form action="/connexionadmin" method="POST">
+                <label for="nom"></label>
+                <input type="text" name="nom" id="nom"/>
+                <label for="prenom"></label>
+                <input type="text" name="prenom" id="prenom"/>
+                <button type="submit" >Seconnecter</button>
+
+             </form>
+    </body>
+    <footer>{% include("layout/footer.html") %}</footer>
+</html>

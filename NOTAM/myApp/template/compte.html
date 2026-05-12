@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    {% set titre="Gestion des NOTAM" %}
+    <head>{% include("layout/head.html") %}</head>
+    <header>{% include("layout/nav.html") %}</header>
+        <body>
+              <form action="/creation" method="POST">
+                <div class="mb-3">
+                    <label for="nom" class="form-label">Nom</label>
+                    <input type="text" class="form-control" name="nom" placeholder="Nom">
+                </div>
+                <div class="mb-3">
+                    <label for="prenom" class="form-label">Prenom</label>
+                    <input type="text" class="form-control" name="prenom" placeholder="Prenom">
+                </div>
+                
+                <div class="mb-3">
+                    <label for="login" class="form-label">Login</label>
+                    <input type="text" class="form-control" name="login" placeholder="Login">
+                </div>
+                
+                <button type="submit" >Créer un compte</button>
+
+             </form>
+        </body>
+    <footer>{% include("layout/footer.html") %}</footer>
+</html>

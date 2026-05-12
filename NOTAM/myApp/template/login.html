@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    {% set titre="Gestion des NOTAM" %}
+    <head>{% include("layout/head.html") %}</head>
+    <header>{% include("layout/nav.html") %}</header>
+        <body>
+             <form action="/connexion" method="GET" >
+                <div class="mb-3">
+                    <label for="login" class="form-label">Login</label>
+                    <input type="text" class="form-control" name="login" placeholder="login">
+                </div>
+                
+                <div class="mb-3">
+                    <label for="motdepasse" class="form-label">Mot de passe</label>
+                    <input type="text" class="form-control" name="motdepasse" placeholder="Mot de passe">
+                </div>
+                <button type="submit" >Seconnecter</button>
+
+             </form>
+    </body>
+    <footer>{% include("layout/footer.html") %}</footer>
+</html>

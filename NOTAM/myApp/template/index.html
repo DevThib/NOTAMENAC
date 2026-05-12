@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    {% set titre="Gestion des NOTAM" %}
+    <head>{% include("layout/head.html") %}</head>
+    <header>{% include("layout/nav.html") %}</header>
+        <body>
+            <div class="center">
+                <div class="title">
+                    <b class="titletext">Tets test test test</b>
+                    <i>Récupérez le notam que vous désirez</i>
+                    <div class="search">
+                        <input type="text" placeholder="Code OACI de l'aérodrome">
+                        <button>🔍</button>
+                    </div>
+                </div>
+                <b class="latest" style="width:80%">Derniers NOTAM publiés :</b>
+                <div class="metar">
+                    <b>LFOB</b>
+                    <p>TRIGGER NOTAM - AIP SUP 211/25 : UNMANNED STATE ACFT FLIGHTS REQUIRING THE CREATION OF 2 TEMPORARY RESTRICTED AREAS ('ZRT PEGOUD' AND 'ZRT CRUSOE').THIS AIP SUP IS AVBL AT WWW.SIA.AVIATION-CIVILE.GOUV.FR|</p>
+                </div>#777
+                <div class="metar">
+                     <b>LFOB</b>
+                    <p>ULM RWY CLSD</p>
+                </div>
+                <div class="metar">
+                    <b>LFPG</b>
+                    <p>MEASURING MAST OPR AT 'ST CYR LES COLONS', RDL 122/13.02NM ARP LFLA PSN : 474352.126N 0034612.585E  HGT : 394FT  ELEV : 1149FTLGT : DAY NGTREF AIP FRANCE DATASET ENR 5.4</p>
+                </div>
+                <div class="metar">
+                     <b>LFOS</b>
+                    <p>TWY LEADING TO HLDG POINT B CLSD (DUE TO DEGRADED SURFACE) :- TWY LEADING TO HLDG POINT A REMAINS OPENED- ACFT MUST USE ONLY HLDG POINT A TO ACCESS THE RWY.</p>
+                </div>
+
+            </div>
+        
+    </body>
+    <footer>{% include("layout/footer.html") %}</footer>
+</html>

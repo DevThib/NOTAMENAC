@@ -1,0 +1,24 @@
+
+            <div class="main-head">
+                <nav id="navbar" class="navbar">
+                    <ul>
+                        <li> <a class="active" href="/"> ACCUEIL</a>
+                                {% if session['login'] %}
+                                    <li><a href="/deconnexion">SE DECONNECTER</a></li>
+                                {% else%}
+                                    <li><a href="/login">SE CONNECTER</a></li>
+                                {% endif %}
+                                <li><a href="/espace_administrateur">ESPACE ADMINISTRATEUR</a></li>
+                                <li><a href="/compte">CREER UN COMPTE</a></li>
+
+
+
+
+    
+                                <li><a href="/#footer">A PROPOS</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>        
+            </div>
+            
